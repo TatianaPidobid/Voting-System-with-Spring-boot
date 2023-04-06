@@ -2,6 +2,7 @@ package com.voting.votingsystem.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Table(name="candidate")
@@ -9,7 +10,8 @@ import javax.persistence.Table;
 public class Candidate {
 
 	public Candidate() {}
-	
+
+	@Id
 	@Column(name="id")
 	private Long id;
 
@@ -20,7 +22,7 @@ public class Candidate {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	
+
 	@Column(name="candidate_name")
 	private String name;
 
@@ -37,6 +39,5 @@ public class Candidate {
 		this.id = id;
 		this.name = name;
 	}
-	
-	
+
 }
