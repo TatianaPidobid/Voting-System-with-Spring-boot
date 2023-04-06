@@ -5,12 +5,12 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Table(name="citizens")
+@Table(name="candidate")
 @Entity
-public class Citizen {
+public class Candidate {
 
-	public Citizen() {}
-	
+	public Candidate() {}
+
 	@Id
 	@Column(name="id")
 	private Long id;
@@ -23,7 +23,7 @@ public class Citizen {
 		this.id = id;
 	}
 
-	@Column(name="citizen_name")
+	@Column(name="candidate_name")
 	private String name;
 
 	public String getName() {
@@ -34,11 +34,10 @@ public class Citizen {
 		this.name = name;
 	}
 
-	public Citizen(Long id, String name) {
+	public Candidate(Long id, String name) {
 		super();
 		this.id = id;
 		this.name = name;
 	}
 
-	
 }
