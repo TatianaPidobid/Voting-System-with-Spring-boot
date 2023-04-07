@@ -40,5 +40,16 @@ public class Citizen {
 		this.name = name;
 	}
 
+	@Column(name="has_voted")
+	private Boolean hasVoted;
+
+	public Boolean getHasVoted() {
+		return hasVoted;
+	}
+
+	public void setHasVoted(Boolean hasVoted) {
+		this.hasVoted = hasVoted;
+	} 
+	
 	
 }
